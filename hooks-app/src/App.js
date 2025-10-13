@@ -5,12 +5,13 @@ import MyComp from './components/MyComp';
 import { CreateContext } from './components/CreateContext';
 import { CounterDisplay } from './components/CounterDisplay';
 import { CounterButton } from './components/CounterButton';
+import UseReduser1 from './components/UseReduser1';
 
 function App() {
   return (
     
       <>
-      <MyComp></MyComp>
+      {/* <MyComp></MyComp>
       <CreateContext >
         <div style={{textAlign:"center", marginTop:"50px"}}>
           <h1>i am from Counter Context</h1>
@@ -18,7 +19,9 @@ function App() {
         <CounterDisplay></CounterDisplay>
         <CounterButton></CounterButton>
        
-      </CreateContext>
+      </CreateContext> */}
+
+      <UseReduser1></UseReduser1>
       </>
 
 
