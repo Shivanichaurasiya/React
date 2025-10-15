@@ -1,11 +1,14 @@
 
 import './App.css';
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import MyComp from './components/MyComp';
-
 import { CreateContext } from './components/CreateContext';
 import { CounterDisplay } from './components/CounterDisplay';
 import { CounterButton } from './components/CounterButton';
 import UseReduser1 from './components/UseReduser1';
+import UseMemohoo from './components/UseMemohoo';
+import TodoList from './components/TodoList';
+import TodoPage from './components/TodoPage';
 
 function App() {
   return (
@@ -19,9 +22,18 @@ function App() {
         <CounterDisplay></CounterDisplay>
         <CounterButton></CounterButton>
        
-      </CreateContext> */}
+      </CreateContext> */}+
 
-      <UseReduser1></UseReduser1>
+      {/* <UseReduser1></UseReduser1>
+      <UseMemohoo></UseMemohoo> */}
+      {/* <TodoList/>
+      <TodoPage/> */}
+      <BrowserRouter>
+      <Routes>
+        <Route path="/todo" element={<TodoPage/>}/>
+      
+      </Routes>
+      </BrowserRouter>
       </>
 
 
