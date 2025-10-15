@@ -30,15 +30,22 @@ function App() {
       <TodoPage/> */}
       <BrowserRouter>
       <Routes>
+        <Route path="/mycomp" element={<MyComp/>}/>
         <Route path="/todo" element={<TodoPage/>}/>
-      
+        <Route path="/reduse" element={<UseReduser1/>}/>
+        <Route path="/memo" element={<UseMemohoo/>}/>
+        <Route path="/context" element={<CreateContext>
+         <div style={{textAlign:"center", marginTop:"50px"}}>
+          <h1>i am from Counter Context</h1>
+           </div>
+        <CounterDisplay></CounterDisplay>
+        <CounterButton></CounterButton>
+        </CreateContext>
+        }
+      />
       </Routes>
       </BrowserRouter>
       </>
-
-
-      
-    
   );
 }
 

@@ -13,14 +13,19 @@ const TodoPage = () => {
   const handleAddTodo = useCallback(() => {
     if (newTodo.trim() === '') return;
 
+    const newId =Date.now();
+    console.log('new todo id',newId);
+
     setTodos((prevTodos) => [
       ...prevTodos,
       {
-        id: Date.now(),
+        id: newId,
+       
         text: newTodo.trim(),
         completed: false,
-      },
+      }, 
     ]);
+   
 
     setNewTodo('');
   }, [newTodo]);
