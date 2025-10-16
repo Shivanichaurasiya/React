@@ -6,9 +6,13 @@ import { CreateContext } from './components/CreateContext';
 import { CounterDisplay } from './components/CounterDisplay';
 import { CounterButton } from './components/CounterButton';
 import UseReduser1 from './components/UseReduser1';
-import UseMemohoo from './components/UseMemohoo';
-import TodoList from './components/TodoList';
+import {UseMemohoo} from './components/UseMemohoo';
+import LayoutExample from './components/LayoutExample'
+
+import { Box } from './components/Box';
+
 import TodoPage from './components/TodoPage';
+import { Theame } from './components/Theame';
 
 function App() {
   return (
@@ -43,6 +47,9 @@ function App() {
         </CreateContext>
         }
       />
+      <Route path="/theame" element={<Theame/>}/>
+      <Route path="/layout" element={<LayoutExample/>}/>
+      <Route path="/box" element={<Box/>}/>
       </Routes>
       </BrowserRouter>
       </>
